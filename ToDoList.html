@@ -20,4 +20,23 @@
         </table>
     
 </body>
+<script>
+    var n=0;
+    function addToTable() {
+    
+    n++;
+      var table = document.getElementById("ToDoTable");
+      var todo=document.getElementById("toDoInput").value;
+      var row = table.insertRow(0);
+      var cell1 = row.insertCell(0);
+      var cell2 = row.insertCell(1);
+      
+      cell1.innerHTML = n;
+      cell2.innerHTML = todo;
+      
+      document.getElementById("ToDoForm").reset();
+     
+    }
+    </script>
+    
 </html>
