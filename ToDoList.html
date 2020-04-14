@@ -4,17 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
+    <style>
+        td {
+         border: 1px;width: 150px;height: 30px;border-style:solid;
+       }
+       input{
+           width: 150px;height: 30px; border-style:solid;
+       }
+       button {color:coral;background-color: cornsilk;
+                border-radius: 20%;width: 100px; height: 30px;
+
+       }
+       
+       #todoHead{ width:150px;background-color: blue;height: 30px;
+       }
+       #n{ width:150px; background-color: burlywood; height: 30px;
+       
+       }
+       </style>
 </head>
 <body>
 
     <form id="ToDoForm"  onsubmit="addToTable();return false">
-        <input type="text" value="" id="toDoInput"><br><br>
-        <button type="submit" >Ajouter </button>
+        <input type="text" value="" id="toDoInput"><br>
+        <button type="submit" >Ajouter </button><br><br>
         </form>
         <table id="ToDoTable">
         <tr> 
         <thead> 
-            <th id=" n">N°</th><th id="todoHead">ToDo </th>
+            <th id="n">N°</th><th id="todoHead">ToDo </th>
         </thead>
         </tr>
         </table>
